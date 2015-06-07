@@ -2,20 +2,27 @@
 
 color:red;
 
-}
-.sample-show-hide {
-  padding:10px;
+}/* Styles go here */
+
+.content {
+  padding: 10px;
+  
+  margin-left: 10em;
+  margin-right: 10em;
+  margin-top: 2em;
   border:1px solid black;
-  background:white;
+  overflow: hidden;
+  transition: all linear 0.5s;
 }
 
-.sample-show-hide {
-  -webkit-transition:all linear 0.5s;
-  transition:all linear 0.5s;
+.content.ng-enter,
+.content.ng-leave.ng-leave-active {
+  max-height:0;
 }
 
-.sample-show-hide.ng-hide {
-  opacity:0;
+.content.ng-leave,
+.content.ng-enter.ng-enter-active {
+  max-height:5em;
 }
 button{
      margin-left:35em;

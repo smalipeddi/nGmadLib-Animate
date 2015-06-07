@@ -75,14 +75,14 @@
                </div>
                <div class="row" >
          <div class="col-sm-8" >
-              <button type="submit" class="btn btn-primary"  ng-disabled="myForm.$invalid" ng-click="fade = !fade" >Submit</button>
+              <button type="submit" class="btn btn-primary"  ng-disabled="myForm.$invalid" ng-click="show=!show">Submit</button>
               </div>
               </div>
             </form>
         
     
       <div class="row">
-         <div  ng-show="myVar"  class="summary" class="col-sm-6" ng-class="{fade:fade}">
+         <div  ng-if="show" class="content">
               {{fade}}
                {{maleName}} was a {{jobTitle}} who loved technology.Although he loved parts of his job , he absolutely hated {{tediousTask}} and {{dirtyTask}},So {{maleName}} met with his life mentor {{celebrity}} who told him to how to {{uselessSkill}} with Thinkful.Thinkful did not offer a course on {{uselessSkill}} so he studied programmign instead.
                What a great decision !!! With his new skills {{maleName}} built a(n) {{adjective}} robot named {{obnauxiousCelebrity}} that not only loved  {{dirtyTask}} but did it {{hugeNumber}} faster.
